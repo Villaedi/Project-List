@@ -60,14 +60,3 @@ Then open: http://localhost:5173
 
 🧠 Author
 Made by Edi with ❤️
-
----
-
-Would you like me to generate the Spanish version too?
-
-You can copy this into your `README.md`, then just run:
-
-```bash
-git add README.md
-git commit -m "Update README with current progress"
-git push

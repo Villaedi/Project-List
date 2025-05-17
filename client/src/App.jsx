@@ -6,7 +6,7 @@ function App() {
   const [form, setForm] = useState({
     name: '',
     quantity: '',
-    user: 'Vitalidad'
+    user: 'Villaedi'
   });
 
   useEffect(() => {

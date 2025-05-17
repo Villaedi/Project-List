@@ -1,80 +1,73 @@
-# 🛒 Shopping List App
+# 🛒 Collaborative Shopping List App
 
-A real-time collaborative shopping list application built with:
+A real-time collaborative shopping list built with:
 
-- ⚛️ React + Vite (frontend)
-- 🎨 Tailwind CSS (styling)
-- 🌐 Express + Node.js (backend)
-- 🔁 Socket.io (real-time communication)
-
----
-
-## 🚀 Features
-
-- ✅ Real-time updates for all users
-- ✅ Add products with name and quantity
-- ✅ Shared list between multiple users
-- ✅ Responsive design with Tailwind CSS
-- ⬜ Download shopping list as PDF (coming soon)
-- ⬜ Share shopping list via link or QR (coming soon)
-- ⬜ Edit / remove products (planned)
+- 🖥️ **Frontend**: React + Vite + Tailwind CSS
+- ⚙️ **Backend**: Node.js + Express + Socket.IO
+- 🧠 **Database**: MongoDB (local) + Mongoose
 
 ---
 
-## 📁 Project Structure
+## 📦 Features
 
-shopping-list-app/
+- Real-time updates via Socket.IO
+- Add products with name and quantity
+- Each product is stored in MongoDB
+- Display of full product list to all users
+- Backend & frontend running independently
+
+---
+
+## 🚀 Project Structure
+ListApp/
 ├── client/ # React + Vite frontend
 ├── server/ # Express + Socket.io backend
-├── README.md
-├── .gitignore
-
+│ ├── models/ # Mongoose schemas
+│ ├── index.js # App entry point
+│ └── .env # MongoDB connection
+└── README.md
 
 ---
 
-## 🧪 How to Run Locally
+## 🔧 Getting Started
 
-### 1. Clone the repository
+### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/shopping-list-app.git
-cd shopping-list-app
+git clone https://github.com/your-username/listapp.git
+cd listapp
 
-2. Install and run the backe
-
+2. Start the backend
 cd server
 npm install
 npm run dev
+Make sure MongoDB is running locally (mongodb://localhost:27017/shoppinglist)
 
-The backend runs on http://localhost:3001
+3. Start the frontend
 
-3. Install and run the frontend
-
-cd client
+cd ../client
 npm install
 npm run dev
 
-The frontend runs on http://localhost:5173
+Then open: http://localhost:5173
 
-Make sure both frontend and backend are running simultaneously.
+📌 TODOs
+ Add delete/edit buttons
 
-📓 Development Progress Log
+ User authentication
 
-| Date                   | Description                                 |
-| ---------------------- | ------------------------------------------- |
-| 2025-05-17             | Initialized frontend and backend            |
-| 2025-05-18             | Connected Socket.io, real-time list working |
-| (you add more here...) |                                             |
+ Host on production
 
+🧠 Author
+Made by Edi with ❤️
 
-💡 Future Enhancements
-Export list as PDF
+---
 
-Share list by URL or QR code
+Would you like me to generate the Spanish version too?
 
-Add user authentication or session naming
+You can copy this into your `README.md`, then just run:
 
-Product editing and deletion
-
-Save list to a database
-
+```bash
+git add README.md
+git commit -m "Update README with current progress"
+git push
